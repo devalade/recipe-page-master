@@ -184,12 +184,14 @@ section {
 .cooking--times .details small {
     text-transform: uppercase;
     color: #BDBDBD;
-    font-size: .8em;
+    font-size: .65em;
     font-weight: 700;
 }
 
 .cooking--times .details h5 {
     font-weight: normal;
+    font-size: .9em;
+    line-height: 1.6;
 }
 
 footer {
