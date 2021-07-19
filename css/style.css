@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --orange:  #F2994A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; 
+    padding: 0 auto;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+h1, h2, h3, h4, h5, h6, p , a{
+    text-decoration: none;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 60%;
+    min-width: 60%;
+    margin: 5em auto;
+}
+
+.container .wrapper {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.recipe--name {
+    font-size: 3.2em;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+.recipe--description {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.recipe--description span {
+    font-size: 2em;
+    transform: rotate(90deg);
+    transform-origin: 16px 10px;
+    color: #c4c4c4;
+}
+
+.recipe--description p {
+    width: 52%;
+    font-size: 1em;
+    font-style: italic;
+    margin-left: .2em;
+    color: #4F4F4F;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 60%;
+    padding-top: 2em;
+}
+
+.recipe--ingredients h2 {
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.cooking--details h4 {
+    font-family: 'Playfair Display';
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    padding: 2em 0;
+}
+
+.ingredient {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.ingredient label {
+    line-height: 1.5em;
+}
+
+.ingredient span {
+    font-weight: 700;
+}
+
+.ingredient input {
+    min-height: 1.5em;
+    min-width: 1.5em;
+    margin-right: 1em;
+    margin-bottom: auto;
+    /* margin-bottom: em; */
+}
+
+.cooking--instructions h2 {
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    padding: 1.5em 0;
+}
+
+.instruction {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.instruction--number {
+    text-align: center;
+    max-height: 2em;
+    min-width: 2em;
+    border-radius: 6px;
+    margin-right: 1em;
+    background: var(--orange);
+    font-size: 1.5em;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color: #FFF;
+}
+
+.instruction p {
+    line-height: 1.4em;
+}
+
+.instruction span {
+    font-weight: 700;
+}
+
+.source {
+    color: #c4c4c4;
+}
+
+.cooking--times {
+    height: min-content;
+    margin-top: 3em;
+    padding: 4em 3em;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cooking--times .time div , .cooking--times .serving {
+    display: flex;
+    margin-bottom: 3em;
+    background: #fff;
+}
+
+.cooking--times .serving .material-icons, .cooking--times .serving h5{
+    color: var(--orange);
+}
+
+.cooking--times .time div:last-child {
+    margin-bottom: 0;
+}
+
+.material-icons {
+    font-size: 2.5em;
+    margin-right: .3em;
+}
+
+.cooking--times .details small {
+    text-transform: uppercase;
+    color: #BDBDBD;
+    font-size: .8em;
+    font-weight: 700;
+}
+
+.cooking--times .details h5 {
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: .9em;
+    color: #828282;
+}
+
+footer a{
+    color: #828282;
+}
+
+footer a:first-child {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 75%;
+        min-width: 75%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 95%;
+        min-width: 95%;
+        margin-top: 2em;
+    }
+
+    .recipe--name {
+        font-size: 2em;
+    }
+
+    .recipe--description p {
+        width: 70%;
+        font-size: .9em;
+        font-style: italic;
+        color: #4F4F4F;
+    }
+
+    .left {
+        width: 100%;
+        padding-top: 2em;
+    }
+
+
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .cooking--times {
+        padding: 0;
+        box-shadow: none;
+        
+    }
+
+    .cooking--times  .time  {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cooking--times  .time div {
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .recipe--name {
+        font-size: 1.6em;
+    }
+
+    .recipe--ingredients h2 {
+        font-size: 1.5em;
+    }
+
+    .material-icons {
+        font-size: 1.4em;
+    }
+
+    .cooking--details h4 {
+        font-size: 1em;
+    }
+
+    .ingredient label {
+        font-size: .8em;
+    }
+
+    .ingredient input {
+        min-width: .6em;
+        min-height: .6em;
+        margin-right: .5em;
+    }
+
+    .instruction--number {
+        max-height: 2em;
+        min-width: 2em;
+        font-size: 1.3em;
+        margin-right: .5em;
+    }
+
+    .source {
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cooking--instructions h2 {
+        font-size: 1.5em;
+    }
+
+    .cooking--times {
+        margin-top: 1em;
+    }
+
+    .cooking--times .time div , .cooking--times .serving {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cooking--times .serving {
+        margin-bottom: 1em;
+    }
+
+    .cooking--times .details small {
+        font-size: .6em;
+    }
+
+    .cooking--times .details h5 {
+        font-weight: normal;
+        font-size: .6em;
+    }
+}
